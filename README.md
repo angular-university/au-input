@@ -28,30 +28,30 @@ Here is what the icons look like on screen:
 This is how to install the components:
 
 ```bash
-    npm install au-input
+npm install au-input
 ```
 
 or 
 
 ```bash
-    yarn add au-input
+yarn add au-input
 ```
 
 
 And on your application module:
 
 ```ts
-    import {AuInputModule} from 'au-input';
+import {AuInputModule} from 'au-input';
 
-    @NgModule({
-      declarations: [ ...],
-      imports: [
-        BrowserModule,
-        ....,
-         AuInputModule
-    ],
-    })
-    export class AppModule { }
+@NgModule({
+  declarations: [ ...],
+  imports: [
+    BrowserModule,
+    ....,
+     AuInputModule
+],
+})
+export class AppModule { }
 ```
 
 See below for SystemJs / UMD installation.
@@ -61,7 +61,7 @@ See below for SystemJs / UMD installation.
 We will need to add first a version of Font Awesome to our page, for example:
 
 ```html
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 ```
 
 Then we can use the Font Awesome Input like this:
