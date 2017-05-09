@@ -1,0 +1,22 @@
+{
+  "name": "au-input",
+  "version": "1.2.4",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/angular-university/au-input"
+  },
+  "keywords": [
+    "angular"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/angular-university/au-input/issues"
+  },
+  "module": "au-input.js",
+  "typings": "au-input.d.ts",
+  "peerDependencies": {
+    "@angular/core": "^4.0.0",
+    "rxjs": "^5.1.0",
+    "zone.js": "^0.8.4"
+  }
+}

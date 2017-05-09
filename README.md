@@ -1,138 +1,72 @@
-# WORK IN PROGRESS
+# au-input
 
-# Angular Icon Inputs 
+## Installation
 
-This module contains a couple of Angular Input box components that allow to add an icon inside a text input, which helps better identify common input fields like for example email, etc.
+To install this library, run:
 
-This small module contains only the HTML and CSS necessary to implement this very common HTML pattern. 
+```bash
+$ npm install au-input --save
+```
 
-The default theme of the input is designed to look just like a plain HTML input, including the focus blue border (tab and shift-tab are supported).
+## Consuming your library
 
-Any icon available on either the [Font Awesome](http://fontawesome.io) or the [Google Material Design](https://material.io/icons/) Icon libraries can be used.
+Once you have published your library to npm, you can import your library in any Angular application by running:
 
-### Features:
+```bash
+$ npm install au-input
+```
 
-- The components have minimum styling and are themable 
-- there is no need to include a component-specific external stylesheet, only the Font Awesome or Material icons stylesheets
-- Compatible with AOT
-- As the component takes a plain input and projects it, this means that by design the component supports all standard HTML input attributes, including custom attributes (data-), all the accessiblity properties, etc.
-- This also means that these components are Compatible with Angular Forms 
+and then from your Angular `AppModule`:
 
-# Demo 
-Here is what the icons look like on screen:
+```typescript
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
 
-![Demo of au-input components](https://raw.githubusercontent.com/angular-university/au-input/master/images/icons-demo.png)
+import { AppComponent } from './app.component';
 
+// Import your library
+import { SampleModule } from 'au-input';
 
-# Installation
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,
 
-This is how to install the components:
+    // Specify your library as an import
+    LibraryModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+```
 
-    npm install au-input
+Once your library is imported, you can use its components, directives and pipes in your Angular application:
 
-or 
+```xml
+<!-- You can now use your library component in app.component.html -->
+<h1>
+  {{title}}
+</h1>
+<sampleComponent></sampleComponent>
+```
 
-    yarn add au-input
+## Development
 
-And on your application module:
+To generate all `*.js`, `*.d.ts` and `*.metadata.json` files:
 
-    import {AuInputModule} from 'au-input';
+```bash
+$ npm run build
+```
 
-    @NgModule({
-      declarations: [ ...],
-      imports: [
-        BrowserModule,
-        ....,
-         AuInputModule
-    ],
-    })
-    export class AppModule { }
+To lint all `*.ts` files:
 
+```bash
+$ npm run lint
+```
 
-# Using the Font Awesome Inputs
+## License
 
-We will need to add first a version of Font Awesome to our page, for example:
-
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-
-Then we can use the Font Awesome Input like this:
-
-    <au-fa-input icon="envelope">
-        <input type="email" name="email" placeholder="Email" autocomplete="off" 
-            class="some-class" data-stripe="email">
-    </au-fa-input>
-
-    <au-fa-input id="password-field" icon="lock" >
-        <input placeholder="Password" class="test-class">
-    </au-fa-input>
-
-    <au-fa-input  icon="cc-stripe">
-        <input placeholder="Stripe">
-    </au-fa-input>
-
-    <au-fa-input icon="paypal">
-        <input placeholder="Paypal">
-    </au-fa-input>
-
-The inputs receive an input property named `icon` that identifies which Font Awesome icon we want to apply. 
-
-The value `envelope` will add the email icon by adding the CSS class `fa-envelope` to the icon, etc.
-
-The input that you pass inside the component is just a plain HTML input that will be projected inside the component, so all the standard HTML properties of an input apply. 
-
-There is no need to add anything special to the input, like a reference with a given name, add it a special CSS class, etc.  - any plain HTML input will work, including if annotated with other Angular directives.
-
-
-# Using the Material Design Input
-
-We will need to add first a version of the Google Material Design icons to our page, for example:
-
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-Then we can use the Material Design Input like this:
-
-    <au-md-input icon="search">
-        <input type="email" name="email" placeholder="E-mail">
-    </au-md-input>
-
-    <au-md-input icon="perm_identity">
-        <input name="identity" placeholder="Identity Number">
-    </au-md-input>
-
-    <au-md-input icon="receipt">
-        <input name="receipt" placeholder="Receipt">
-    </au-md-input>
-        
-
-# Running The Sample Application
-
-This module ships with a sample application. To run it, first clone this repo and then install some global dependencies:
-
-    npm install -g @angular/cli yarn
-
-Once the global dependencies are installed, to install the module dependencies go to the folder with the file `package.json` and run:
-
-    yarn
-
-From there to start the application, run the following command:
-
-    npm start
-
-The sample application is now running at port 4200:
-
-[http://localhost:4200](http://localhost:4200)
-
-# Running the Tests 
-
-The tests can be executed with the following command:
-
-    npm test
-
-# License 
-
-[MIT](https://opensource.org/licenses/MIT)
-
-
-
-
-
+MIT © [JHades](mailto:jhades.dev@gmail.com)
