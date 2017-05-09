@@ -47,7 +47,8 @@ We will need to add first a version of Font Awesome to our page, for example:
 Then we use the Font Awesome Input like this:
 
     <au-fa-input icon="envelope">
-        <input type="email" name="email" placeholder="Email" autocomplete="off" class="some-class" data-stripe="email">
+        <input type="email" name="email" placeholder="Email" autocomplete="off" 
+            class="some-class" data-stripe="email">
     </au-fa-input>
 
     <au-fa-input id="password-field" icon="lock" >
