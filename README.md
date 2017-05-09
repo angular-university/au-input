@@ -14,7 +14,7 @@ Any icon available on either the [Font Awesome](http://fontawesome.io) or the [G
 - no need to include a component-specific external stylesheet, only the Font Awesome or Material icons stylesheets
 - Compatible with AOT
 - Compatible with Angular Forms
-- The inputs supports all standard HTML input attributes, including custom attributes (data-), all the accessiblity properties, etc.
+- By design supports all standard HTML input attributes, including custom attributes (data-), all the accessiblity properties, etc.
 
 # Demo 
 Here is what the icons look like on screen:
