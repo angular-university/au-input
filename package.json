@@ -10,7 +10,8 @@
     "build": "ng build",
     "test": "ng test --single-run",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "prepublishOnly": "./node_modules/.bin/tsc  -p tsconfig.npm.json"
   },
   "private": false,
   "dependencies": {
