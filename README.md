@@ -87,23 +87,26 @@ There is no need to add anything special to the input, like a reference with a g
 
 We will need to add first a version of the Google Material Design icons to our page, for example:
 
+```html
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+```
 
 Then we can use the Material Design Input like this:
 
-    <au-md-input icon="search">
-        <input type="email" name="email" placeholder="E-mail">
-    </au-md-input>
+```html
+<au-md-input icon="search">
+    <input type="email" name="email" placeholder="E-mail">
+</au-md-input>
 
-    <au-md-input icon="perm_identity">
-        <input name="identity" placeholder="Identity Number">
-    </au-md-input>
+<au-md-input icon="perm_identity">
+    <input name="identity" placeholder="Identity Number">
+</au-md-input>
 
-    <au-md-input icon="receipt">
-        <input name="receipt" placeholder="Receipt">
-    </au-md-input>
-        
-
+<au-md-input icon="receipt">
+    <input name="receipt" placeholder="Receipt">
+</au-md-input>
+```
+        
 # Running This Module In Development
 
 First let's build the library using
