@@ -2,6 +2,10 @@
 
 This module contains a couple of Angular Input box components that allow to add an icon inside a text input, which helps to improve user experience and better identify common input fields like for example email, etc.
 
+This small module contains only the minimal HTML and CSS necessary to implement this very common HTML pattern. The default theme of the input is designed to look just like a plain HTML input, including the focus blue border (tab and shift-tab are supported).
+
+
+
 Any icon available on either the [Font Awesome](http://fontawesome.io) or the [Google Material Design](https://material.io/icons/) Icon libraries can be used.
 
 Here is what the icons look like on screen:
