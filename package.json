@@ -2,6 +2,7 @@
   "name": "au-input",
   "version": "1.1.0",
   "license": "MIT",
+  "url": "https://github.com/angular-university/au-input",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
