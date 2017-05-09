@@ -11,7 +11,8 @@ describe('AppComponent', () => {
     let component: AppComponent,
         fixture: ComponentFixture<AppComponent>,
         el: DebugElement,
-        emailField: DebugElement;
+        emailFaField: DebugElement,
+        identityMdField: DebugElement;
 
 
     beforeEach(async(() => {
@@ -27,7 +28,8 @@ describe('AppComponent', () => {
         fixture = TestBed.createComponent(AppComponent);
         component = fixture.debugElement.componentInstance;
         el = fixture.debugElement;
-        emailField = el.query(By.css('#email-field'));
+        emailFaField = el.query(By.css('#email-field'));
+        identityMdField = el.query(By.css('#identity-field'));
 
         fixture.detectChanges();
 
@@ -40,16 +42,30 @@ describe('AppComponent', () => {
 
 
     it('should create a font awesome email input', async(() => {
-        expect(emailField).toBeTruthy();
+        expect(emailFaField).toBeTruthy();
 
     }));
 
     it('should include the correct email icon inside the email input', async(() => {
-        expect(emailField.query(By.css('i.icon.fa.fa-envelope'))).toBeTruthy();
+        expect(emailFaField.query(By.css('i.icon.fa.fa-envelope'))).toBeTruthy();
     }));
 
     it('should have projected the correct test input inside the email field', async(() => {
-        expect(emailField.query(By.css('input.test-class'))).toBeTruthy();
+        expect(emailFaField.query(By.css('input.test-class'))).toBeTruthy();
+    }));
+
+
+    it('should create a material design identity input', async(() => {
+        expect(identityMdField).toBeTruthy();
+    }));
+
+
+    it('should include the correct icon inside the identity input', async(() => {
+        expect(identityMdField.query(By.css('i.md-icon')).nativeElement.textContent).toEqual("perm_identity");
+    }));
+
+    it('should have projected the correct test input inside the identity field', async(() => {
+        expect(identityMdField.query(By.css('input.test-class'))).toBeTruthy();
     }));
 
 
