@@ -30,6 +30,7 @@ This is how to install the components:
 ```bash
     npm install au-input
 ```
+
 or 
 
 ```bash
