@@ -11,7 +11,7 @@ import {InputRefDirective} from "../common/input-ref.directive";
         <ng-content></ng-content>
 
     `,
-    styleUrls: ['./au-md-input.component.css']
+    styleUrls: ['../common/common.css', '../common/_default-theme.scss', './au-md-input.component.css']
 })
 export class AuMdInputComponent implements AfterContentInit {
 
