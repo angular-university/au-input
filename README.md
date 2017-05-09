@@ -65,6 +65,12 @@ Then we use the Font Awesome Input like this:
 
 The inputs receive an input property named `icon` that identifies which Font Awesome icon we want to apply. The value envelope will add the email icon by adding the CSS class "fa-envelope" to the icon, etc.
 
+The input that you pass inside the component is just a plain HTML input that will be projected inside the component, so all the standard HTML properties of an input apply. There is no need to add anything special to the input, like a reference with a given name, add it a special CSS class, etc.  - any plain HTML will work.
+
+# Using the Material Design Input
+
+
+
 
 
 # Running The Sample Application
