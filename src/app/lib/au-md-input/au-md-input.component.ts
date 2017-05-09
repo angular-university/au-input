@@ -4,7 +4,13 @@ import {InputRefDirective} from "../common/input-ref.directive";
 
 @Component({
     selector: 'au-md-input',
-    templateUrl: './au-md-input.component.html',
+    template: `
+
+        <i class="md-icon" [innerHtml]="icon"></i>
+        
+        <ng-content></ng-content>
+
+    `,
     styleUrls: ['./au-md-input.component.css']
 })
 export class AuMdInputComponent implements AfterContentInit {
