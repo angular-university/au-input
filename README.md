@@ -130,15 +130,15 @@ npm run build
 Then let's link it:
 
 ```bash
-     cd dist
-     npm link
+cd dist
+npm link
 ```
 
 
 On another folder on the same machine where we have for example a running Angular CLI, we then do:
 
 ```bash
-    npm link au-input
+npm link au-input
 ```
 
 
@@ -147,7 +147,7 @@ On another folder on the same machine where we have for example a running Angula
 The tests can be executed with the following command:
 
 ```bash
-    npm test
+npm test
 ```
 
 ## Using SystemJs via the UMD bundle ?
@@ -155,20 +155,20 @@ The tests can be executed with the following command:
 Make sure to add this to your `map` configuration, if you need the module served from a CDN:
 
 ```javascript
-    map: {
+map: {
 
-       ...
-       'au-input': 'https://unpkg.com/au-input@1.2.6/au-input.umd.js'
-    }
+   ...
+   'au-input': 'https://unpkg.com/au-input@1.2.6/au-input.umd.js'
+}
 ```
 
 Otherwise if serving from `node_modules`directly:
 
 ```javascript
-    map: {
-       ...
-       'au-input': 'node_modules/au-input/au-input.umd.js'
-    }
+map: {
+   ...
+   'au-input': 'node_modules/au-input/au-input.umd.js'
+}
 ```
 
 # License 
