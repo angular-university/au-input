@@ -34,6 +34,8 @@ or
 
 And on your application module:
 
+    import {AuInputModule} from 'au-input';
+
     @NgModule({
       declarations: [ ...],
       imports: [
