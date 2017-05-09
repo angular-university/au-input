@@ -10,7 +10,9 @@ import {InputRefDirective} from "../common/input-ref.directive";
         <ng-content></ng-content>
         
     `,
-    styleUrls: ['./au-fa-input.component.css']
+    styleUrls: [
+        "../common/common.css","../common/_default-theme.scss","_au-fa-input-red-theme.scss"
+    ]
 })
 export class AuFaInputComponent implements AfterContentInit {
 
