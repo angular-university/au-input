@@ -1,6 +1,6 @@
 # Angular Icon Inputs 
 
-This module contains a couple of Angular Input box components that allow to add an icon inside a text input, which helps to improve user experience and better identify common input fieldsn like email, etc.
+This module contains a couple of Angular Input box components that allow to add an icon inside a text input, which helps to improve user experience and better identify common input fields like for example email, etc.
 
 Any icon available on either the [Font Awesome](http://fontawesome.io) or the [Google Material Design](https://material.io/icons/) Icon libraries can be used.
 
