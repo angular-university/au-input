@@ -40,7 +40,7 @@ or
 
 And on your application module:
 
-```typescript
+```java
     import {AuInputModule} from 'au-input';
 
     @NgModule({
@@ -52,7 +52,7 @@ And on your application module:
     ],
     })
     export class AppModule { }
-```    
+```  
 
 See below for SystemJs / UMD installation.
 
