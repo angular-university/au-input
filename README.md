@@ -78,7 +78,7 @@ The value `envelope` will add the email icon by adding the CSS class `fa-envelop
 
 The input that you pass inside the component is just a plain HTML input that will be projected inside the component, so all the standard HTML properties of an input apply. 
 
-There is no need to add anything special to the input, like a reference with a given name, add it a special CSS class, etc.  - any plain HTML will work.
+There is no need to add anything special to the input, like a reference with a given name, add it a special CSS class, etc.  - any plain HTML input will work, including if annotated with other Angular directives.
 
 
 # Using the Material Design Input
