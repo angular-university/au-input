@@ -1,4 +1,3 @@
-# WORK IN PROGRESS
 
 # Angular Icon Inputs 
 
@@ -48,6 +47,7 @@ And on your application module:
     })
     export class AppModule { }
 
+See below for SystemJs / UMD installation.
 
 # Using the Font Awesome Inputs
 
@@ -104,29 +104,44 @@ Then we can use the Material Design Input like this:
     </au-md-input>
         
 
-# Running The Sample Application
+# Running This Module In Development
 
-This module ships with a sample application. To run it, first clone this repo and then install some global dependencies:
+First let's build the library using
 
-    npm install -g @angular/cli yarn
+     npm run build
+     
+Then let's link it:
 
-Once the global dependencies are installed, to install the module dependencies go to the folder with the file `package.json` and run:
+     cd dist
+     npm link
 
-    yarn
+On another folder on the same machine where we have for example a running Angular CLI, we then do:
 
-From there to start the application, run the following command:
+    npm link au-input
 
-    npm start
-
-The sample application is now running at port 4200:
-
-[http://localhost:4200](http://localhost:4200)
 
 # Running the Tests 
 
 The tests can be executed with the following command:
 
     npm test
+
+## Using SystemJs via the UMD bundle ?
+
+Make sure to add this to your `map` configuration, if you need the module served from a CDN:
+
+    map: {
+       ...
+       'au-input': 'https://unpkg.com/au-input@1.2.6/au-input.umd.js'
+    }
+
+Otherwise if serving from `node_modules`directly:
+
+    map: {
+       ...
+       'au-input': 'node_modules/au-input/au-input.umd.js'
+    }
+
 
 # License 
 
