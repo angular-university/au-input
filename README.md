@@ -38,7 +38,31 @@ And on your application module:
     export class AppModule { }
 
 
-# Using the Input Components
+# Using the Font Awesome Inputs
+
+We will need to add first a version of Font Awesome to our page, for example:
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+Then we use the Font Awesome Input like this:
+
+    <au-fa-input icon="envelope">
+        <input type="email" name="email" placeholder="Email" autocomplete="off" class="some-class" data-stripe="email">
+    </au-fa-input>
+
+    <au-fa-input id="password-field" icon="lock" >
+        <input placeholder="Password" class="test-class">
+    </au-fa-input>
+
+    <au-fa-input  icon="cc-stripe">
+        <input placeholder="Stripe">
+    </au-fa-input>
+
+    <au-fa-input icon="paypal">
+        <input placeholder="Paypal">
+    </au-fa-input>
+
+The inputs receive an input property named `icon` that identifies which Font Awesome icon we want to apply. The value envelope will add the email icon by adding the CSS class "fa-envelope" to the icon, etc.
 
 
 
