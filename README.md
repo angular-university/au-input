@@ -11,7 +11,7 @@ Any icon available on either the [Font Awesome](http://fontawesome.io) or the [G
 ### Features:
 
 - The components have minimum styling and are themable 
-- no need to include a component-specific external stylesheet, only the Font Awesome or Material icons stylesheets
+- there is no need to include a component-specific external stylesheet, only the Font Awesome or Material icons stylesheets
 - Compatible with AOT
 - As the component takes a plain input and projects it, this means that by design the component supports all standard HTML input attributes, including custom attributes (data-), all the accessiblity properties, etc.
 - This means also that these components are Compatible with Angular Forms 
