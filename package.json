@@ -6,6 +6,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "start:prod": "ng serve -prod --aot",
     "build": "ng build",
     "test": "ng test --single-run",
     "lint": "ng lint",
