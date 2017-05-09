@@ -27,7 +27,15 @@ or
 
 And on your application module:
 
-
+    @NgModule({
+      declarations: [ ...],
+      imports: [
+        BrowserModule,
+        ....,
+         AuInputModule
+    ],
+    })
+    export class AppModule { }
 
 
 # Using the Input Components
