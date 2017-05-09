@@ -6,19 +6,21 @@ This small module contains only the minimal HTML and CSS necessary to implement 
 
 The default theme of the input is designed to look just like a plain HTML input, including the focus blue border (tab and shift-tab are supported).
 
-
-
 Any icon available on either the [Font Awesome](http://fontawesome.io) or the [Google Material Design](https://material.io/icons/) Icon libraries can be used.
 
+### Features:
+
+- The components have minimum styling and are themable 
+- no need to include a component-specific external stylesheet, only the Font Awesome or Material icons stylesheets
+- Compatible with AOT
+- The inputs supports all standard HTML input attributes, including custom attributes (data-), all the accessiblity properties, etc.
+
+# Demo 
 Here is what the icons look like on screen:
 
 ![Demo of au-input components](https://raw.githubusercontent.com/angular-university/au-input/master/images/icons-demo.png)
 
-# Features
 
-The components have minimum styling and are themable, the styles are isolated and won't interfere in the page where they are deployed. The components are compatible with AOT.
-
-The HTML input is not hidden inside the component, so it supports all standard HTML input attributes, including custom attributes (data-), all the accessiblity properties, etc.
 
 
 # Installation
@@ -69,9 +71,12 @@ Then we use the Font Awesome Input like this:
         <input placeholder="Paypal">
     </au-fa-input>
 
-The inputs receive an input property named `icon` that identifies which Font Awesome icon we want to apply. The value envelope will add the email icon by adding the CSS class "fa-envelope" to the icon, etc.
+The inputs receive an input property named `icon` that identifies which Font Awesome icon we want to apply. 
+
+The value envelope will add the email icon by adding the CSS class "fa-envelope" to the icon, etc.
 
 The input that you pass inside the component is just a plain HTML input that will be projected inside the component, so all the standard HTML properties of an input apply. There is no need to add anything special to the input, like a reference with a given name, add it a special CSS class, etc.  - any plain HTML will work.
+
 
 # Using the Material Design Input
 
