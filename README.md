@@ -120,7 +120,7 @@ Then we can use the Material Design Input like this:
         
 # Running This Module In Development
 
-First let's build the library using
+First let's build the library using this command:
 
 ```bash
 npm run build
