@@ -1,4 +1,4 @@
-# Angular Icon HTML Inputs 
+# Angular Icon Inputs 
 
 This module contains a couple of Angular Input box components that allow to add a SVG icon inside an HTML input.
 
