@@ -1,14 +1,14 @@
-# Angular Icon Inputs - Font Awesome and Material Design 
+# Angular Icon HTML Inputs 
 
 This module contains a couple of Angular Input box components that allow to add a SVG icon inside an HTML input.
 
-All icons available on either the [Font Awesome](http://fontawesome.io) or the [Google Material Design](https://material.io/icons/) icon libraries can be used.
+Any icons available on either the [Font Awesome](http://fontawesome.io) or the [Google Material Design](https://material.io/icons/) can be used.
 
 The components have minimum styling and are themable, the styles are isolated and won't interfere in the page where they are deployed. 
 
 Here is what the icons look like on screen:
 
-
+-[Demo of au-input components](https://raw.githubusercontent.com/angular-university/au-input/master/images/icons-demo.png)
 
 
 # Installation
