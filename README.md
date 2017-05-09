@@ -1,3 +1,5 @@
+# WORK IN PROGRESS
+
 # Angular Icon Inputs 
 
 This module contains a couple of Angular Input box components that allow to add an icon inside a text input, which helps better identify common input fields like for example email, etc.
