@@ -11,8 +11,8 @@
     "test": "./node_modules/.bin/ng test --single-run",
     "lint": "./node_modules/.bin/ng lint",
     "e2e": "./node_modules/.bin/ng e2e",
-    "build-npm": "./node_modules/.bin/tsc  -p tsconfig.npm.json",
-    "prepublishOnly": "./node_modules/.bin/npm-run-all test build-npm"
+    "build:prod": "./node_modules/.bin/ng -prod --aot",
+    "prepublishOnly": "./node_modules/.bin/npm-run-all test build:prod"
   },
   "private": false,
   "dependencies": {
