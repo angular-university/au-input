@@ -27,15 +27,20 @@ Here is what the icons look like on screen:
 
 This is how to install the components:
 
-    npm install au-input
-
+```bash
+    npm install au-input
+```
 or 
 
-    yarn add au-input
+```bash
+    yarn add au-input
+```
+
 
 And on your application module:
 
-    import {AuInputModule} from 'au-input';
+```typescript
+    import {AuInputModule} from 'au-input';
 
     @NgModule({
       declarations: [ ...],
@@ -45,7 +50,8 @@ And on your application module:
          AuInputModule
     ],
     })
-    export class AppModule { }
+    export class AppModule { }
+```    
 
 See below for SystemJs / UMD installation.
 
@@ -53,11 +59,14 @@ See below for SystemJs / UMD installation.
 
 We will need to add first a version of Font Awesome to our page, for example:
 
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+```html
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+```
 
 Then we can use the Font Awesome Input like this:
 
-    <au-fa-input icon="envelope">
+```html
+    <au-fa-input icon="envelope">
         <input type="email" name="email" placeholder="Email" autocomplete="off" 
             class="some-class" data-stripe="email">
     </au-fa-input>
@@ -72,7 +81,8 @@ Then we can use the Font Awesome Input like this:
 
     <au-fa-input icon="paypal">
         <input placeholder="Paypal">
-    </au-fa-input>
+    </au-fa-input>
+```    
 
 The inputs receive an input property named `icon` that identifies which Font Awesome icon we want to apply. 
 
@@ -111,40 +121,54 @@ Then we can use the Material Design Input like this:
 
 First let's build the library using
 
-     npm run build
+```bash
+npm run build
+```
+
      
 Then let's link it:
 
+```bash
      cd dist
      npm link
+```
+
 
 On another folder on the same machine where we have for example a running Angular CLI, we then do:
 
-    npm link au-input
+```bash
+    npm link au-input
+```
 
 
 # Running the Tests 
 
 The tests can be executed with the following command:
 
+```bash
     npm test
+```
 
 ## Using SystemJs via the UMD bundle ?
 
 Make sure to add this to your `map` configuration, if you need the module served from a CDN:
 
-    map: {
+```javascript
+    map: {
+
        ...
        'au-input': 'https://unpkg.com/au-input@1.2.6/au-input.umd.js'
-    }
+    }
+```
 
 Otherwise if serving from `node_modules`directly:
 
+```javascript
     map: {
        ...
        'au-input': 'node_modules/au-input/au-input.umd.js'
-    }
-
+    }
+```
 
 # License 
 
