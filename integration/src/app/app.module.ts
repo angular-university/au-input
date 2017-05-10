@@ -1,11 +1,11 @@
 import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { LibModule } from 'quickstart-lib';
+import { AuInputModule } from 'au-input';
 
 import { AppComponent }  from './app.component';
 
 @NgModule({
-  imports:      [ BrowserModule, LibModule],
+  imports:      [ BrowserModule, AuInputModule],
   declarations: [ AppComponent ],
   bootstrap:    [ AppComponent ]
 })
