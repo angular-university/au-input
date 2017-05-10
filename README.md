@@ -13,9 +13,12 @@ Any icon available on either the [Font Awesome](http://fontawesome.io) or the [G
 
 - The components have minimum styling and are themable 
 - there is no need to include a component-specific external stylesheet, only the Font Awesome or Material icons stylesheets
-- Compatible with AOT
 - As the component takes a plain input and projects it, this means that by design the component supports all standard HTML input attributes, including custom attributes (data-), all the accessiblity properties, etc.
 - This also means that these components are Compatible with Angular Forms 
+- This repo is based on the [angular-quickstart-lib](https://github.com/filipesilva/angular-quickstart-lib), 
+so this package is in the [Angular Package Format v4.0](https://docs.google.com/document/d/1CZC2rcpxffTDfRDs6p1cfbmKNLA6x5O-NtkJglDaBVs/edit#heading=h.k0mh3o8u5hx).
+- This means its compatible with AOT 
+
 
 # Demo 
 Here is what the icons look like on screen:
@@ -170,6 +173,7 @@ map: {
    'au-input': 'node_modules/au-input/bundles/au-input.umd.min.js'
 }
 ```
+
 
 # License 
 
