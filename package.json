@@ -1,6 +1,6 @@
 {
   "name": "au-input",
-  "version": "1.2.6",
+  "version": "1.2.7",
   "description": "au-input",
   "main": "./au-input.umd.js",
   "module": "./au-input.es5.js",
