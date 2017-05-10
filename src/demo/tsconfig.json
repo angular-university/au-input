@@ -1,0 +1,17 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": "",
+    "module": "commonjs",
+    "declaration": false,
+    "emitDecoratorMetadata": true,
+    "paths": {
+      "au-input": [
+        "../lib"
+      ]
+    }
+  },
+  "exclude": [
+    "main-aot.ts"
+  ]
+}

@@ -1,32 +1,11 @@
-# Node
-node_modules/*
+dist/
+node_modules/
+out-tsc/
+debug.log
 npm-debug.log
-
-# TypeScript
-src/*.js
-src/*.map
-src/*.d.ts
-
-# JetBrains
-.idea
-.project
-.settings
-.idea/*
-*.iml
-
-# VS Code
-.vscode/*
-
-# Windows
-Thumbs.db
-Desktop.ini
-
-# Mac
-.DS_Store
-**/.DS_Store
-
-# Ngc generated files
-**/*.ngfactory.ts
-
-# Build files
-dist/*
+src/**/*.js
+!src/demo/systemjs.config.js
+!src/demo/systemjs.config.lib.js
+*.js.map
+e2e/**/*.js
+e2e/**/*.js.map
