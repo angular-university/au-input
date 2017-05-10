@@ -186,11 +186,16 @@ map: {
 And in our packages property:
 
 ```javascript
+packages: {
+   ...
   'au-input': {
     main: 'index.js',
     defaultExtension: 'js'
   }
+
+}
 ```
+
 
 # License 
 
