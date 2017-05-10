@@ -9,3 +9,5 @@ src/**/*.js
 *.js.map
 e2e/**/*.js
 e2e/**/*.js.map
+.idea
+
