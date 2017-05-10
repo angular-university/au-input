@@ -16,7 +16,7 @@ Any icon available on either the [Font Awesome](http://fontawesome.io) or the [G
 - As the input component takes a plain input and projects it, this means that by design the component supports all standard HTML input attributes, including custom attributes (data-), all the accessiblity properties, etc.
 - This also means that these components are Compatible with Angular Forms 
 - This repo is based on the [angular-quickstart-lib](https://github.com/filipesilva/angular-quickstart-lib), 
-so this package is in the [Angular Package Format v4.0](https://docs.google.com/document/d/1CZC2rcpxffTDfRDs6p1cfbmKNLA6x5O-NtkJglDaBVs/edit#heading=h.k0mh3o8u5hx).
+which is a seed repo (under development) for a library in the [Angular Package Format v4.0](https://docs.google.com/document/d/1CZC2rcpxffTDfRDs6p1cfbmKNLA6x5O-NtkJglDaBVs/edit#heading=h.k0mh3o8u5hx).
 - This means for example that its compatible with AOT, and includes UMD bundles for use with for example SystemJs
 
 
