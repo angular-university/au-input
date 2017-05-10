@@ -23,7 +23,7 @@ so this package is in the [Angular Package Format v4.0](https://docs.google.com/
 # Demo 
 Here is what the icons look like on screen:
 
-![Demo of au-input components](https://raw.githubusercontent.com/angular-university/au-input/master/images/icons-demo.png)
+![Demo of au-input components](https://raw.githubusercontent.com/angular-university/au-input/master/images/icons.png)
 
 
 # Installation
