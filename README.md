@@ -121,6 +121,14 @@ Then we can use the Material Design Input like this:
 </au-md-input>
 ```
         
+# Running the Demo Application
+This command will build and start the demo application:
+
+```bash
+npm start
+```
+
+
 # Running This Module In Development
 
 First let's build the library using this command:
@@ -147,10 +155,11 @@ npm link au-input
 
 # Running the Tests 
 
-The tests can be executed with the following command:
+The tests can be executed with the following commands:
 
 ```bash
 npm test
+npm integration
 ```
 
 ## Using SystemJs via the UMD bundle ?
@@ -174,6 +183,14 @@ map: {
 }
 ```
 
+And in our packages property:
+
+```javascript
+  'au-input': {
+    main: 'index.js',
+    defaultExtension: 'js'
+  }
+```
 
 # License 
 
