@@ -158,7 +158,7 @@ Make sure to add this to your `map` configuration, if you need the module served
 map: {
 
    ...
-   'au-input': 'https://unpkg.com/au-input@1.2.6/au-input.umd.js'
+   'au-input': 'https://unpkg.com/au-input@<version number>/au-input.umd.min.js'
 }
 ```
 
@@ -167,7 +167,7 @@ Otherwise if serving from `node_modules`directly:
 ```javascript
 map: {
    ...
-   'au-input': 'node_modules/au-input/au-input.umd.js'
+   'au-input': 'node_modules/au-input/bundles/au-input.umd.min.js'
 }
 ```
 
