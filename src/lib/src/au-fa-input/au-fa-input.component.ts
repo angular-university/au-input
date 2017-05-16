@@ -2,7 +2,6 @@ import {Component, Input, ContentChild, AfterContentInit, HostBinding, ViewEncap
 import {InputRefDirective} from "../common/input-ref.directive";
 import {commonCss} from "../common/common.css";
 import {defaultThemeCss} from "../common/default-theme.css";
-import {faInputRedTheme} from "./au-fa-input-red-theme.css";
 
 @Component({
     selector: 'au-fa-input',
@@ -13,7 +12,7 @@ import {faInputRedTheme} from "./au-fa-input-red-theme.css";
         <ng-content></ng-content>
         
     `,
-    styles: [ commonCss, defaultThemeCss, faInputRedTheme ]
+    styles: [ commonCss, defaultThemeCss ]
 })
 export class AuFaInputComponent implements AfterContentInit {
 
