@@ -5,32 +5,32 @@ import { Component } from '@angular/core';
   template: `
 
       <au-fa-input icon="envelope">
-          <input type="email" name="email" placeholder="Email" autocomplete="off"
+          <input auInput type="email" name="email" placeholder="Email" autocomplete="off"
                  class="some-class" data-stripe="email">
       </au-fa-input>
 
       <au-fa-input id="password-field" icon="lock" >
-          <input placeholder="Password" class="test-class">
+          <input auInput placeholder="Password" class="test-class">
       </au-fa-input>
 
       <au-fa-input  icon="cc-stripe">
-          <input placeholder="Stripe">
+          <input auInput placeholder="Stripe">
       </au-fa-input>
 
       <au-fa-input icon="paypal">
-          <input placeholder="Paypal">
+          <input auInput placeholder="Paypal">
       </au-fa-input>
 
       <au-md-input icon="search">
-          <input type="email" name="email" placeholder="E-mail">
+          <input auInput type="email" name="email" placeholder="E-mail">
       </au-md-input>
 
       <au-md-input icon="perm_identity">
-          <input name="identity" placeholder="Identity Number">
+          <input auInput name="identity" placeholder="Identity Number">
       </au-md-input>
 
       <au-md-input icon="receipt">
-          <input name="receipt" placeholder="Receipt">
+          <input auInput name="receipt" placeholder="Receipt">
       </au-md-input>      
       
   `,

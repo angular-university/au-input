@@ -71,20 +71,20 @@ Then we can use the Font Awesome Input like this:
 
 ```html
 <au-fa-input icon="envelope">
-    <input type="email" name="email" placeholder="Email" autocomplete="off" 
+    <input auInput type="email" name="email" placeholder="Email" autocomplete="off" 
         class="some-class" data-stripe="email">
 </au-fa-input>
 
 <au-fa-input id="password-field" icon="lock" >
-    <input placeholder="Password" class="test-class">
+    <input auInput placeholder="Password" class="test-class">
 </au-fa-input>
 
 <au-fa-input  icon="cc-stripe">
-    <input placeholder="Stripe">
+    <input auInput placeholder="Stripe">
 </au-fa-input>
 
 <au-fa-input icon="paypal">
-    <input placeholder="Paypal">
+    <input auInput placeholder="Paypal">
 </au-fa-input>
 ```
 
@@ -94,7 +94,7 @@ The value `envelope` will add the email icon by adding the CSS class `fa-envelop
 
 The input that you pass inside the component is just a plain HTML input that will be projected inside the component, so all the standard HTML properties of an input apply. 
 
-There is no need to add anything special to the input, like a reference with a given name, add it a special CSS class, etc.  - any plain HTML input will work, including if annotated with other Angular directives.
+To make sure that the focus functionality is working correctly, make sure to apply the attribute directive `auInput` like in the examples. 
 
 
 # Using the Material Design Input
@@ -109,15 +109,15 @@ Then we can use the Material Design Input like this:
 
 ```html
 <au-md-input icon="search">
-    <input type="email" name="email" placeholder="E-mail">
+    <input auInput type="email" name="email" placeholder="E-mail">
 </au-md-input>
 
 <au-md-input icon="perm_identity">
-    <input name="identity" placeholder="Identity Number">
+    <input auInput name="identity" placeholder="Identity Number">
 </au-md-input>
 
 <au-md-input icon="receipt">
-    <input name="receipt" placeholder="Receipt">
+    <input auInput name="receipt" placeholder="Receipt">
 </au-md-input>
 ```
         

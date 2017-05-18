@@ -1,4 +1,4 @@
-import {Component, Input, ContentChild, AfterContentInit, HostBinding, ViewEncapsulation} from '@angular/core';
+import {Component, Input, ContentChild, AfterContentInit, HostBinding} from '@angular/core';
 import {InputRefDirective} from "../common/input-ref.directive";
 import {commonCss} from "../common/common.css";
 import {defaultThemeCss} from "../common/default-theme.css";
@@ -9,7 +9,7 @@ import {defaultThemeCss} from "../common/default-theme.css";
 
         <i class="icon fa" [ngClass]="classes"></i>
         
-        <ng-content></ng-content>
+        <ng-content select="input"></ng-content>
         
     `,
     styles: [ commonCss, defaultThemeCss ]
